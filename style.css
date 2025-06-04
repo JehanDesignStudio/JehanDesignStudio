@@ -1,0 +1,16 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e2f;
+  color: #ffffff;
+}
+a, h1, h2, h3, h4 {
+  color: #f39c12;
+}
+.navbar a {
+  color: #ffffff !important;
+}
+.hero-section {
+  background-color: #111;
+  padding: 100px 20px;
+}

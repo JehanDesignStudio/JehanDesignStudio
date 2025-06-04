@@ -1,206 +1,28 @@
-
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>JehanDesignStudio - Solusi Sistem Informasi & Desain Modern</title>
-    <style>
-        /* Reset & dasar */
-        * {
-            margin: 0; padding: 0; box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            line-height: 1.6;
-            background: #f9f9f9;
-            color: #333;
-        }
-        a {
-            color: #007bff;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-
-        /* Container */
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-            padding: 0 15px;
-        }
-
-        /* Header / Hero */
-        header {
-            background: #004080;
-            color: #fff;
-            padding: 60px 0;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.8rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            font-size: 1.3rem;
-            margin-bottom: 1.5rem;
-            font-weight: 500;
-        }
-        .btn-contact {
-            background: #ff6f61;
-            color: #fff;
-            padding: 12px 25px;
-            border-radius: 25px;
-            font-weight: bold;
-            display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-        .btn-contact:hover {
-            background: #e6554f;
-        }
-
-        /* Section */
-        section {
-            padding: 50px 0;
-            border-bottom: 1px solid #ddd;
-        }
-        section h2 {
-            text-align: center;
-            margin-bottom: 30px;
-            color: #004080;
-        }
-
-        /* Tentang Kami */
-        .about p {
-            max-width: 700px;
-            margin: 0 auto 1.5rem auto;
-            font-size: 1.1rem;
-            text-align: center;
-        }
-
-        /* Layanan */
-        .services {
-            display: grid;
-            grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
-            gap: 25px;
-            max-width: 900px;
-            margin: 0 auto;
-        }
-        .service-item {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 6px rgb(0 0 0 / 0.1);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-        .service-item:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 6px 12px rgb(0 0 0 / 0.15);
-        }
-        .service-item h3 {
-            margin-bottom: 12px;
-            color: #004080;
-        }
-        .service-item p {
-            font-size: 1rem;
-            color: #555;
-        }
-
-        /* Kontak */
-        .contact-info {
-            text-align: center;
-            font-size: 1.1rem;
-            color: #444;
-        }
-        .contact-info a {
-            display: inline-block;
-            margin: 0 10px;
-            padding: 8px 15px;
-            background: #004080;
-            color: #fff;
-            border-radius: 6px;
-            font-weight: 600;
-            transition: background-color 0.3s ease;
-        }
-        .contact-info a:hover {
-            background: #002d5a;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 0.9rem;
-            color: #777;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 2rem;
-            }
-            header p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JehanDesignStudio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>JehanDesignStudio</h1>
-            <p>Solusi Sistem Informasi & Desain Modern</p>
-            <a class="btn-contact" href="https://wa.me/6285169199196" target="_blank" rel="noopener noreferrer">Hubungi Kami via WhatsApp</a>
-        </div>
-    </header>
-
-    <section id="about" class="about">
-        <div class="container">
-            <h2>Tentang Kami</h2>
-            <p>JehanDesignStudio adalah studio digital kreatif yang berfokus pada pengembangan sistem informasi berbasis web, desain antarmuka pengguna (UI/UX), dan solusi teknologi untuk kebutuhan bisnis maupun institusi. Berbasis di Kota Padang, Sumatera Barat, kami hadir untuk mendukung transformasi digital dengan layanan yang profesional, cepat, dan berkualitas.</p>
-            <p>Visi kami adalah menjadi penyedia solusi sistem informasi terdepan di Indonesia yang mendukung efisiensi dan digitalisasi bisnis.</p>
-        </div>
-    </section>
-
-    <section id="services" class="services-section">
-        <div class="container">
-            <h2>Layanan Kami</h2>
-            <div class="services">
-                <div class="service-item">
-                    <h3>Pengembangan Sistem Informasi</h3>
-                    <p>Membangun aplikasi web dan sistem manajemen yang sesuai kebutuhan bisnis Anda.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Desain UI/UX</h3>
-                    <p>Menciptakan antarmuka yang ramah pengguna dan menarik untuk aplikasi dan website.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Desain Web</h3>
-                    <p>Desain website profesional yang responsif dan modern untuk memperkuat branding Anda.</p>
-                </div>
-                <div class="service-item">
-                    <h3>Konsultasi IT</h3>
-                    <p>Bantuan ahli dalam merancang dan mengimplementasikan solusi teknologi informasi.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>Kontak Kami</h2>
-            <p class="contact-info">
-                <a href="https://wa.me/6285169199196" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-                <a href="mailto:jehandesainstudio@gmail.com">Email</a>
-                <a href="https://instagram.com/JehanDesignStudio" target="_blank" rel="noopener noreferrer">Instagram</a>
-            </p>
-        </div>
-    </section>
-
-    <footer>
-        <p>© 2025 JehanDesignStudio. All rights reserved.</p>
-    </footer>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4">
+    <a class="navbar-brand" href="#">JehanDesignStudio</a>
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="text-center hero-section text-white">
+    <h1>Welcome to JehanDesignStudio</h1>
+    <p>Designs that elevate your brand identity.</p>
+    <a href="portfolio.html" class="btn btn-warning mt-3">View Portfolio</a>
+  </header>
 </body>
 </html>
